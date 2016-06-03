@@ -6,6 +6,7 @@ CREATE TABLE thing (
   id SERIAL NOT NULL,
   name TEXT NOT NULL,
   url TEXT NOT NULL,
+  CONSTRAINT thing_pkey PRIMARY KEY(id)
 );
 CREATE INDEX url ON thing USING btree (url);
 
